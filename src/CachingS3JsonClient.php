@@ -138,7 +138,7 @@ class CachingS3JsonClient extends AbstractS3JsonClient {
             'Bucket' => $this->bucket,
             'Key' => "{$this->baseKey}{$key}",
             'ACL' => 'public-read',
-            'Content-Type' => 'application/json',
+            'ContentType' => 'application/json',
         ];
     }
 }
