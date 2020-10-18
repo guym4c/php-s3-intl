@@ -1,0 +1,31 @@
+{
+    "name": "guym4c/php-s3-intl",
+    "description": "i18n for PHP, storing langpacks on S3",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/guym4c/php-s3-intl",
+    "keywords": ["intl", "i18n", "s3", "php"],
+    "authors": [
+        {
+            "name": "Guy Mac",
+            "email": "hello@guymac.eu",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Guym4c\\PhpS3Intl\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*",
+        "psr/http-message": "^1.0",
+        "doctrine/cache": "^1.10",
+        "voku/portable-utf8": "^5.4",
+        "aws/aws-sdk-php": "^3.158",
+        "shrikeh/teapot": "^2.3",
+        "twig/twig": "^3.0"
+    }
+}
