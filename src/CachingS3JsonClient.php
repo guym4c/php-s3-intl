@@ -80,7 +80,7 @@ class CachingS3JsonClient extends AbstractS3JsonClient {
     }
 
     public function save(string $key, array $data = []): void {
-        if ($data = []) {
+        if (count($data) === 0) {
             $data = new stdClass();
         }
 
